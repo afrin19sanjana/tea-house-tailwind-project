@@ -1,88 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House Project</title>
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-<!-- font awesome cdn -->
-<script src="https://kit.fontawesome.com/cd620b64b0.js" crossorigin="anonymous"></script>
-<!-- tailwind cdn  -->
-<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/cd620b64b0.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-      @theme {
+        @theme {
         --color-clifford: #da373d;
       }
     </style>
 </head>
+
 <body>
     <!-- header content -->
-   <header class="container mx-auto">
-    <div class="lg:flex justify-between  pt-16 pb-36">
-        <!-- text-content -->
-        <div class="justify-start  md:justify-center">
-           <h1 class="font-bold text-5xl md:text-7xl text-[#1C1C1C]">It's good <br>
-            tea time at The<br>Tea House</h1>
-            <p class="font-medium text-md md:text-lg text-[#777777] py-7">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
-            <button class="p-4"><a class=" bg-linear-to-r from-orange-300 to-orange-700 py-4 px-6 rounded-lg text-white font-semibold"  href="">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i> </a></button>
-        </div>
-        <!-- image content -->
-        <div class="">
-            <img class="z-30" src="images/banner.png" alt="main image of product">
-            <!-- card content -->
-            <div class="flex items-center shadow-md w-64 h-28 relative left-25 bottom-25 z-40 bg-white rounded-lg p-4 gap-x-3">
-              <div class="text-[#F3C623] text-3xl">
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="">
-                <h3 class="font-bold text-[rgba(28, 28, 28, 1)] text-3xl">5.00</h3>
-                <p class="font-semibold text-lg text-[#777777]">Trust Pilot Ratings</p>
-              </div>
+    <header class="container mx-auto">
+        <div class="lg:flex justify-between  pt-16 pb-36">
+            <!-- text-content -->
+            <div class="justify-start  md:justify-center">
+                <h1 class="font-bold text-5xl md:text-7xl text-[#1C1C1C]">It's good <br>
+                    tea time at The<br>Tea House</h1>
+                <p class="font-medium text-md md:text-lg text-[#777777] py-7">Tea and Botanical Solutions Supplier Give
+                    Optimum <br>Satisfaction To Your Taste Buds.</p>
+                <button class="p-4"><a
+                        class=" bg-linear-to-r from-orange-300 to-orange-700 py-4 px-6 rounded-lg text-white font-semibold"
+                        href="">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i> </a></button>
+            </div>
+            <!-- image content -->
+            <div class="">
+                <img class="z-30" src="images/banner.png" alt="main image of product">
+                <!-- card content -->
+                <div
+                    class="flex items-center shadow-md w-64 h-28 relative left-25 bottom-25 z-40 bg-white rounded-lg p-4 gap-x-3">
+                    <div class="text-[#F3C623] text-3xl">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="">
+                        <h3 class="font-bold text-[rgba(28, 28, 28, 1)] text-3xl">5.00</h3>
+                        <p class="font-semibold text-lg text-[#777777]">Trust Pilot Ratings</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-   </header> 
-   <!-- main content -->
-   <main class="container mx-auto">
-    <section class="feature">
-      <div class="">
-        <!-- feature content -->
-        <div class="text-center">
-            <h2 class="font-bold text-[#1C1C1C] text-5xl pb-5">Our Featured Products</h2>
-            <p class="pt-5 pb-12 text-[#777777]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,<br> by injected humour, or randomised words which don't look even slightly believable. </p>
+    </header>
+    <!-- main content -->
+    <main class="container mx-auto">
+        <section class="feature mb-32">
+            <div class="">
+                <!-- feature content -->
+                <div class="text-center">
+                    <h2 class="font-bold text-[#1C1C1C] text-5xl pb-5">Our Featured Products</h2>
+                    <p class="pt-5 pb-12 text-[#777777]">There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form,<br> by injected humour, or randomised
+                        words which don't look even slightly believable. </p>
+                </div>
+                <!-- feature Cards -->
+                <div class="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2  space-x-4 md:space-y-4 text-center h-80">
+                    <div class="bg-linear-to-t from-white to-gray-100 p-8">
+                        <img class="mx-auto" src="images/tea-1.png " alt="">
+                        <h3 class="font-bold text-[#1C1C1C] text-2xl pt-7 pb-3">Milk Tea</h3>
+                        <p class="font-semibold text-[#777777] text-lg">Creamer could be replaced <br>by fresh milk</p>
+                    </div>
+                    <div class="bg-linear-to-t from-white to-gray-100 p-8">
+                        <img class="mx-auto" src="images/tea-2.png" alt="">
+                        <h3 class="font-bold text-[#1C1C1C] text-2xl pt-7 pb-3">Black Tea</h3>
+                        <p class="font-semibold text-[#777777] text-lg">Creamer could be replaced,<br> by fresh milk</p>
+                    </div>
+                    <div class="bg-linear-to-t from-white to-gray-100 p-8">
+                        <img class="mx-auto" src="images/tea-3.png" alt="">
+                        <h3 class="font-bold text-[#1C1C1C] text-2xl pt-7 pb-3">Lemon Tea</h3>
+                        <p class="font-semibold text-[#777777] text-lg">Creamer could be replaced <br> by fresh milk</p>
+                    </div>
+                    <div class="bg-linear-to-t from-white to-gray-100 p-8">
+                        <img class="mx-auto " src="images/tea-4.png" alt="">
+                        <h3 class="font-bold text-[#1C1C1C] text-2xl pt-7 pb-3">Green Tea</h3>
+                        <p class="font-semibold text-[#777777] text-lg">Creamer could be replaced <br> by fresh milk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- presentation content -->
+        <!-- <section class="presentation">
+            <div class="grid grid-cols-2">
+                <!-- image content -->
+                <div class="grid grid-cols-2  gap-x-4">
+                    <div class="grid grid-rows-2 bg-[red]">
+                        <div class=""></div>
+                        <div class=""></div>
+                    </div>
+                    <div class="bg-[red]">
+                        <div class=""></div>
+                        <div class=""></div>
+                    </div>
+                </div>
+                <!-- text content -->
+                <div class=""></div>
+            </div>
+        </section> -->
+    </main>
+    <footer class="pt-32 bg-[#fff2eb] mt-32">
+        <div class="container mx-auto">
+            <div class="flex justify-between pb-14">
+                <div>
+                    <img src="images/cup.png" alt="image of logo">
+                </div>
+                <div class="flex items-center gap-x-4">
+                    <h3 class="text-[#494949] text-xl">Ready to get strated?</h3>
+                    <button><a class=" bg-linear-to-r from-orange-300 to-orange-700 py-4 px-6 rounded-lg text-white font-semibold" href="">Get Started</a></button>
+                </div>
+            </div>
+            <div class="grid grid-cols-4">
+                <div class="div">
+                    <h3 class="font-semibold text-xl text-[#1C1C1C] pb-5">Quick Links</h3>
+                    <ul>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">Home</a></li>
+                        <li><a hreclass="text-[#494949] text-lg pb-4" f="">About Us</a></li>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">Insurance</a></li>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="div">
+                    <h3 class="font-semibold text-xl text-[#1C1C1C] pb-5">Our Service</h3>
+                    <ul>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">Life Insurance</a></li>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">Car Insurance</a></li>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">Health Insurance</a></li>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">House Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="div">
+                    <h3 class="font-semibold text-xl text-[#1C1C1C] pb-5" >Help</h3>
+                    <ul>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">FAQs</a></li>
+                        <li><a class="text-[#494949] text-lg pb-4" href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="div">
+                    <h2 class="font-semibold text-xl text-[#1C1C1C] w-52">Subscribe to our newsletter</h2>
+                  <div class="">
+                    <input class="border-b-2 text-[#494949] pt-10 pb-5" type="email" placeholder="Email address"><i class="fa-solid fa-circle-chevron-right text-orange-600"></i>
+                  </div>
+                  <div class="flex gap-x-4 pt-10">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </div>
+                </div>
+            </div>
         </div>
-        <!-- feature Cards -->
-        <div class="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2  space-x-4 md:space-y-4 text-center">
-         <div class="bg-[#F4F4F4]  p-8">
-            <img class="mx-auto"  src="images/tea-1.png " alt="">
-            <h3 class="font-bold text-[#1C1C1C] text-2xl pt-7 pb-3">Milk Tea</h3>
-            <p class="font-semibold text-[#777777] text-lg">Creamer could be replaced <br>by fresh milk</p>
-         </div>
-         <div class="bg-[#F4F4F4] p-8">
-            <img class="mx-auto"  src="images/tea-2.png" alt="">
-            <h3 class="font-bold text-[#1C1C1C] text-2xl pt-7 pb-3">Black Tea</h3>
-            <p class="font-semibold text-[#777777] text-lg">Creamer could be replaced,<br> by fresh milk</p>
-         </div>
-         <div class="bg-[#F4F4F4]  p-8">
-            <img class="mx-auto"  src="images/tea-3.png" alt="">
-            <h3 class="font-bold text-[#1C1C1C] text-2xl pt-7 pb-3">Lemon Tea</h3>
-            <p class="font-semibold text-[#777777] text-lg">Creamer could be replaced <br> by fresh milk</p>
-         </div>
-         <div class="bg-[#F4F4F4] p-8">
-            <img class="mx-auto" src="images/tea-4.png" alt="">
-            <h3 class="font-bold text-[#1C1C1C] text-2xl pt-7 pb-3">Green Tea</h3>
-            <p class="font-semibold text-[#777777] text-lg">Creamer could be replaced <br> by fresh milk</p>
-         </div>
+        <div class="text-center py-32">
+            <small>&copy; 2027 UIDesign.to - All rights reserved.</small>
         </div>
-      </div>
-    </section>
-   </main>
-   <footer>
-
-   </footer>
+    </footer>
 </body>
+
 </html>
